@@ -1,6 +1,6 @@
 import streamlit as st
 import base64
-import plotly_express as px
+import plotly.express as px
 import pandas as pd
 import matplotlib.pylab as plt
 from streamlit_extras.app_logo import add_logo
