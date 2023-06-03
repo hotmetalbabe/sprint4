@@ -7,7 +7,7 @@ from streamlit_extras.dataframe_explorer import dataframe_explorer
 
 st.set_page_config(page_title='Sprint 4 Project', page_icon='https://img.icons8.com/?size=512&id=24733&format=png')
 
-#
+#https://raw.githubusercontent.com/hotmetalbabe/sprint4/blob/5c36d5b03233bea442c5ea73894af6f49659533c/real_madrid.csv
 df = pd.read_csv('real_madrid.csv')
 
 st.title('Real Madrid Player Wages')
