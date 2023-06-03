@@ -1,8 +1,7 @@
-import streamlit as st
-import base64
-import plotly.express as px
 import pandas as pd
-import matplotlib.pylab as plt
+import streamlit as st
+import plotly.express as px
+import base64
 from streamlit_extras.app_logo import add_logo
 from streamlit_extras.dataframe_explorer import dataframe_explorer
 from streamlit_extras.colored_header import colored_header
