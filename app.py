@@ -34,7 +34,7 @@ selected_position - st.sidebar.multiselect('Position', unique_pos,unique_pos)
 df_selection = df[(df.Nation.isin(selected_country)) & (df.Pos.isin(selected_position))]
 
 st.header('Wage Stats')
-st.write('Data Dimension:' + str(df_selection.shape[0] + ' rows and ' + str(df_selection.shape[1] + ' columns.')
+st.write('Data Dimension:' + str(df_selection.shape[0]) + ' rows and ' + str(df_selection.shape[1]) + ' columns.')
 st.dataframe(df_selection)
 
 # Option to download the CSV file
