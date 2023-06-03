@@ -3,7 +3,7 @@ import streamlit as st
 import plotly.express as px
 import base64
 from streamlit_extras.dataframe_explorer import dataframe_explorer
-from streamlit_extras.colored_header import colored_header
+
 
 st.set_page_config(page_title='Sprint 4 Project', page_icon='https://img.icons8.com/?size=512&id=24733&format=png')
 
