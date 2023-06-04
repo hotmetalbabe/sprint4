@@ -45,17 +45,17 @@ st.markdown(filedownload(df), unsafe_allow_html=True)
 if st.button('Country Histogram'):
     st.header('Player Nationality by Age Group')
     country_hist = px.histogram(df, x='Age', marginal = 'violin',
-             range_x=(14,40), animation_frame='Season',nbins=5, range_y=(0,15), width=1500, color='Nation', height=1000)                                       
+             range_x=(14,40), animation_frame='Season',nbins=5, range_y=(0,15), width=1500, color='Nation', height=1000,use_container_width=True)                                       
     st.plotly_chart(country_hist)
 
 if st.button('Wages Histogram'):
     st.header('Total Annual Wages by Position (£)')
-    wages_hist = px.histogram(df, x='Season', y='Annual Wages', color='Pos', hover_data='Annual Wages', barmode='overlay',width=1500,
+    wages_hist = px.histogram(df, x='Season', y='Annual Wages', color='Pos', hover_data='Annual Wages', barmode='overlay',width=1500,use_container_width=True,
            animation_frame='Pos', height=1000)                                    
     st.plotly_chart(wages_hist)
 
 if st.button('Country Scatterplot'):
     st.header('Annual Wage Distribution by Nation (£)')
     country_scat = px.scatter(df, x='Season', y='Annual Wages',
-           hover_data=['Annual Wages', 'Player'], size='Age', render_mode='auto', animation_frame='Nation', width=1500, height=1000, range_y=(0,40000000))                                   
+           hover_data=['Annual Wages', 'Player'], size='Age', render_mode='auto', animation_frame='Nation', width=1500, height=1000, range_y=(0,40000000),use_container_width=True)                                   
     st.plotly_chart(country_scat)
